@@ -1,0 +1,395 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Monaco;
+}
+{\colortbl;\red255\green255\blue255;\red81\green74\blue74;\red51\green153\blue0;\red0\green0\blue255;
+\red102\green177\blue50;}
+\margl1440\margr1440\vieww17980\viewh12080\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Update Log\
+\
+\
+
+\b 06/22/14\
+
+\b0 Huge update.  Updated all update functions for all target derived classes.  proper use of updates vs fixed updates\
+
+\i Package includes update to the following Assets\
+
+\i0 1EnemyScripts/\
+AtlasAndFont/\
+BallEater/\
+BallEaterEnemy.cs\
+BaseEnemy.cs\
+BasicEnemy.cs\
+BossTransition-IntroSameRoom (animation)\
+ChangeLog\
+CommandCenter.cs\
+Crate.cs\
+EntityFactory (Prefab)\
+FireUI.png\
+IconLocCannon (Prefab)\
+IconLocCannon.cs\
+Launcher/\
+PowerUps/\
+RocketShips/\
+Shooters/\
+SmileyTarget.cs\
+Tanks/\
+Target.cs\
+TestTarget.cs\
+Tick/\
+\
+\
+
+\b 06/21/14\
+
+\b0 `BallEater/\
+`BossTransition-IntroSameRoom\
+`Changelog\
+`IconLocCannon -prefab\
+`RocketsShips/\
+`Tanks/\
+\
+
+\b 05/25/14
+\b0 \
+Bot\
+Added better support for cannon connector\
+Cannons not follow position, rotation and scale of the cannon connector\
+Magnet is now a separate object under bot\
+Attaching and Detaching animations\
+updated the way current animations are processed\
+Picking up balls is played queued\
+Moving is Blended\
+Attaching / Detaching is played..\
+This can be improved on\
+Bot also have a blob object attached\
+Improved all bot animations to work with bot body as opposed to bot Game object\
+\
+Camera\
+Camera now has an attach and detach cannon animation\
+Added support to look at a cannon connector\
+planning on improving on looking at object\
+\
+Enemies\
+Cannons not follow position, rotation and scale of the cannon connector\
+Enemies cannon connectors needed to be swapped\
+\
+Added support calls for attaching and detaching animations to GOT, MainGameCamera\
+ToyBox slowdown timer was tweaked\
+\
+
+\b 05/18/14 -2
+\b0 \
+Updated Entity Factory for refreshed enemies\
+HeavyShooter-Bot\
+HeavyShooter-CC\
+MiniRocketShip-S1\
+DarkShooter-Bot\
+\
+
+\b 05/18/14
+\b0 \
+Integrated Crates into Damage behavior.  \
+Crates no longer use its own damage checks for basic collisions (derived can override)\
+Update Base Behavior to support Target as lowest object type \
+All other enemy behaviors have been updated to support the new self object\
+Enabled and tweaked Damage behavior on Crates \
+\
+Enemies can shoot down other enemies again.  yay.\
+\
+
+\b 05/17/14\
+
+\b0 Organized FPackage/fenemies\
+all enemy types are in their respective foloder hierarchy.  There is a base enemy script folder and any derived scripts are in the enemy type scripts folder\
+Think in terms of Objects.  Each enemy category shares common objects.\
+Folder hierarchy\
+Enemy Category (tanks, rockets, ball eaters, launchers, shooters, ticks(ticks are a form of shooters for now), etc.)\
+	\\_ Dedicated Scripts for the category, derived scripts and/ or behaviors\
+	\\_ Prefabs (The folder for all the enemy prefabs)\
+	\\_ Effects (Particles and what not)\
+	\\_ Animations (Shared animations for each category)\
+	\\_ Materials (Any materials used for the enemy category that is not shared across the project)\
+	\\_ Anything else that can make up an Enemy Type\
+\
+Gave love to the Ball Eater.  D1 rockets spawn them again.\
+Ball Eaters now change color and do more damage when they gather 8 balls\
+Think I fixed the Ball Eater crashing when trying to access invalid balls\
+\
+Toned Down Starting enemy damages for all the tanks and ball eaters\
+can last longer with good appearance of threats.  Can be further tweaked, but at this state a first timer should be really be able to get comfortable playing\
+\
+\
+\
+
+\b 05/16/14\
+
+\b0 Integrated bot colliding with wall particle effect.  simple\
+Boundary is now tagged Wall\
+	Known issues, bots animation is set to main object which alters the look of the effect.  Animation need to be done on sub transform body \
+	Then needs to fix the cannon connector, crashes if not immediate underneath the bot object\
+Cleaned the Update folder in fpackage\
+\
+\
+
+\b 04/04/14\
+
+\b0 Updates to the cannon connecter and the canon position.  this allows to put the cannon transform for the cannon underneath animated body parts\
+New script, CannonConnectionPosition.cs;  used for the cannon connector Transform in ALL objects that need to attached a cannon!\
+\
+Also made the cannon connector controller object in BaseEnemyPrivate and updated all the following scripts.\
+\
+BaseEnemy.cs\
+BaseEnemyPickupBehavior.cs\
+IconLocEnemy.cs\
+CannonConnector.cs\
+\
+Updates to all Prefabs; from HeavyBot, all rocketships, all ticks, all tanks and all shooters\
+\
+CannonConnector Transform in a shooter, 
+\b MUST
+\b0  be a CannonConnectionPosition Object\
+\
+
+\b 03/30/14\
+
+\b0 Building of Zepplin Enemy Target\
+Tweaked what rockets spawn\
+Fixed Powerup, making sure they aren\'92t updated at start (it was playing sound)\
+Added functionality to Ball Stack, now can spawn from CC
+\b \
+
+\b0 \
+\
+
+\b 03/04/14\
+
+\b0 Fixed Rocketship box collider (Top half would penetrate the floor) also tweaked angular drag, which should have also fixed the top half because they shouldn\'92t\
+be rotating\
+Tweaked angular drag to shooters too\
+Balanced hit damage behavior for all core targets when colliding with walls, other targets and cannons\
+Tweaked heat activation tax particle.\
+Tweaked tank animation\
+Added light to scene for shadow support\
+Disabled smilies in rocket ships\
+New bot prefab- adjusted body collider to attempt fix on pushing\
+	keeping separate prefab for variation in bots.\
+
+\b \
+As of End of Feb 2014\
+
+\b0 Playing with out middle barrier\'85 fun!\
+NEW Particles!  realistic fires and explosions\
+NEW Mini tanks that attack CC or Bot\
+NEW Enemy the Tick!\
+Rocket ships now spawn enemies!\
+Made adjustments for balancing mass across objects, bot, CC, targets and cannons.  Balls not touched.\
+User experience tweaks: yellow for bot notifications, red for enemy notifications.  Cleared many particle effects (temporary)\
+Black Inactive Balls, standard shader for active balls.  Balls really stand out now!\
+Cleaned up enemy hierarchy and prefabs\
+90% of existing enemies now use new enemy objects and behaviors\
+of those 90% all are now integrated to animation system\
+New Build 2.0.  Cleaned project and reimported all assets.  a clean and stable build.  life saver when building\
+\
+\
+
+\b 02/16/14
+\b0 \
+quite an update.  \
+For starters all edited objects are in FPackage.  Targets, bot, CC and Entity Factory\
+New Target!  Target Launcher!  animates and spawns targets at the player and CC\
+Launcher enemy starts the building of an animation framework\
+	Syncing enemy game behavior states with animation states.\
+\
+Updated TouchDamagebehavior for timed damage!\
+\
+All starting targets (except rocketships) are ShooterEnemies (derived off of BaseEnemy)\
+	Starting to shift all targets to new behavior scripts\
+Set new particles\
+\
+\
+
+\b 02/08/14
+\b0 \
+Just tightened up some variables\
+ - Made cannons lighter\
+ - Made Bot heavier, increased drag and increased movement force.  also made so when no cannon is attached he moves faster.\
+ - Added movement drag var to public interface and removed the hard coding in bot initialize.\
+ - cannon overheating, now is not offset so high and increased explosion force.\
+ - all enemies pull cannons at a lower force, (50, from 300) because cannon capsules are much lighter now\
+ - fixed zebra cool down when burning\
+Update to controls manager. \
+ - made new default and renamed big and original default to iPhone and iPad.  now corresponds to enum\
+ - iPhone buttons now properly scale down when pushed.\
+Updated effects\
+ - enemies explode with shorter brighter effect\
+ - bot now uses smoke explosion when overheating.\
+\
+\
+\
+
+\b 2/01/14
+\b0 \
+Created some new phases and waves for the start of the game.  Testing importing new waves \
+3  New phases\
+Updated prefabs for all basic enemies\
+Updated some particles, bullet trail, basic  explosion, and enemy prepare.. not digging prepare yet.\
+\
+\
+TODO: Updated all cannons recovery rate.  made them cool faster.\
+TODO: cannon recovery rate should be time based.\
+\
+Import Instuctions:\
+- Import latest package\
+- In puppet master, replace the first 3 phases with the new phases respectively\
+- in puppet master start medium phase in index 3 change to original medium phases and then read the rest.\
+- Update the original Standard Shooter, Standard Tank and Shooter Tank.  See enemies folder\
+- check out, effects folder for updated effects.\
+\
+\
+
+\b 12/28/13
+\b0 \
+started work on Ball Eaters\
+Touched Files\
+EntityFactory.cs (added Ball Eater Enemy to factory)\
+BaseEnemy.cs\
+BasicEnemy.cs\
+*New* BallEaterEnemy.cs \
+*New* BallEaterPrefabs    \
+SeekerScript (Made self a minimum of BaseEnemy instead of Basic)(** ended up turning seeker deriving from baseenemyBehaviorscript!!)\
+Target.cs (added heal effect play in regenerate)\
+TargetSpawner.cs\
+*New* fpackage/Worlds    \
+Ball.cs\
+  on pop added setting the neutral tag\
+\pard\pardeftab720
+
+\f1 \cf2 \
+FUIOpenInventoryButton.cs (updated active variable to activesprite and added safety check in update)\
+// HeatBarObject.cs (commented out heat scale assignment)\
+// PowerupAffectBase.cs (fixed set active recursively, its obsolete now, just use set active)\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b \cf0 Behavior Scripts
+\b0 \
+*New* BaseEnemyBehaviorScript.cs (Base Class for all behaviors)\
+*New* BaseEnemyDamageBehavior.cs\
+*New* BaseEnemyPickupBehavior.cs\
+*New* BallEaterBehavior.cs \
+\
+\
+\
+\
+
+\b 11/13
+\b0 \
+\'85 Sometime around here, added support for enemy pulling in cannons.  effected the smart beam, base and basic enemy scripts\
+\'85\
+\
+
+\b 9/08/13
+\b0 \
+Updates to\
+FUIWindowToggle - caching the current alpha, handy for doing fading\
+New LocObjectCC - Visual display for the CC.  Few options are given.. nothing set\
+Made FUI2DlocManager a prefab.\
+\
+How to update:\
+Import new FPackage asset package\
+
+\b Add
+\b0  component SpawnFUI2DLocManager.cs to InGameHUD object\
+
+\b Drag 
+\b0 the FUI2DLocManager prefab into the spawner object added to the ingamehud
+\b \
+Delete
+\b0  previousFUI2DLocManager object, it'll now be a clone.\
+\
+\
+
+\b Add
+\b0  component SpawnIconLocScript.cs to CommandCenter prefab\
+in CommandCenter Prefab 
+\b set
+\b0  Spawn Type to CommandCenterLoc\
+Run.  Should see an icon for CC and all other changes\
+\
+\
+
+\b 6/2/2013
+\b0 \
+IconLocObjects -> IconLocAlerts for enemies added support for seekers.  Seekers are showing with an icon\
+TODO: make icon disappear when in view of the camera\
+TODO: Known Issues with IconLocObjects, a pooled target is not creating or looking for a new iconlocobject.  \
+will use its previous object which would now be used by another target\
+Cannon Select is functional through the Inventory Activity \
+TODO: Known Issues, Toggling of the activity is still broken.  Objects aren't activated and deactivated correctly\
+\
+\
+
+\b 4/7/2013
+\b0 \
+Basic Features of Icon Location System complete.\
+Use FUI2dIconLocManager to create icons.\
+Attach IconLocSpawnScript to an option to have it create an Icon based on selected Type\
+Handles all default icons as well as prefabs for more control\
+Prefab Icons are not pooled, when when its target dies is destroyed \
+Predefined Types are Pooled and managed when a new one is created\
+IconLoc Types for Cannon, Enemies, Powerups\
+Added Spawning Scripts to Powerups\
+***Import Task List***\
+** Clean FPackage Import**\
+Then\
+Need to update the BaseEnemyClass to give read access to states and targets\
+\pard\pardeftab720
+
+\f2 \cf0 	\cf3 //State Information Made Enums Public\
+\cf0 	\cf4 public\cf0  \cf4 enum\cf0  ActionState\
+	\{\
+		Attack,\
+		CoolDown,\
+		Prepare,\
+		Destroyed\
+	\}\
+	\
+	\cf4 public\cf0  \cf4 enum\cf0  EntityAim\
+	\{\
+		Bot,\
+		CommandCenter\
+	\}\
+	\cf5 // Created Accessors\cf0 \
+	\cf4 protected\cf0  EntityAim currentAim = EntityAim.Bot;	\
+	\cf4 public\cf0  EntityAim CurrentAim\{\
+		\cf4 get\cf0  \{ \cf4 return\cf0  currentAim; \} 	\}\
+	\
+	\cf4 protected\cf0  ActionState currentState = ActionState.Prepare;\
+	\cf4 public\cf0  ActionState CurrentState\{\
+		\cf4 get\cf0  \{ \cf4 return\cf0  currentState; \} 	\}\
+\
+Finally \
+Add the IconLocScript on all objects that need to draw an icon\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0 \cf0 \
+\
+3/30/13\
+Currently Inventory system is disabled, testing UIPanel Performance.\
+Improvements to FUI2dLocObjects, new Base object - IconLocObject - IconLocCannon\
+New FUIEnabler Script\
+Started building on FUIActivity\
+New Hierarchy.  Using dedicated UIpanels for sections instead using panels for roots\
+bunch of updates since last\
+\
+2/3/13\
+Updated ToyBox Script to make it a singleton and added access to the bot and stats\
+Updated The PowerupSpawner Script, added Toggle Function for more control\
+Ported TopRight and Bottom Right Anchors to Unity 3\
+\
+\
+\
+}

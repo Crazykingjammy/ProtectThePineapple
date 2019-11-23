@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: 0989b1d11b08393459581279e2c652a1
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: ManArmLeft
+    100002: ManArmRight
+    100004: ManBody
+    100006: ManHead
+    100008: ManLegRight
+    100010: ManLegRight01
+    100012: Mask
+    100014: //RootNode
+    100016: ManLegLeft
+    100018: Arm L
+    100020: Arm R
+    100022: Body01
+    100024: Cap01
+    100026: ChamferBox01
+    100028: Cylinder02
+    100030: Head01
+    100032: Leg L
+    100034: Leg R
+    100036: ManArmLeft01
+    100038: Torus01
+    100040: Tube01
+    400000: ManArmLeft
+    400002: ManArmRight
+    400004: ManBody
+    400006: ManHead
+    400008: ManLegRight
+    400010: ManLegRight01
+    400012: Mask
+    400014: //RootNode
+    400016: ManLegLeft
+    400018: Arm L
+    400020: Arm R
+    400022: Body01
+    400024: Cap01
+    400026: ChamferBox01
+    400028: Cylinder02
+    400030: Head01
+    400032: Leg L
+    400034: Leg R
+    400036: ManArmLeft01
+    400038: Torus01
+    400040: Tube01
+    2300000: ManArmLeft
+    2300002: ManArmRight
+    2300004: ManBody
+    2300006: ManHead
+    2300008: ManLegRight
+    2300010: ManLegRight01
+    2300012: Mask
+    2300014: ManLegLeft
+    2300016: Arm L
+    2300018: Arm R
+    2300020: Body01
+    2300022: Cap01
+    2300024: ChamferBox01
+    2300026: Cylinder02
+    2300028: Head01
+    2300030: Leg L
+    2300032: Leg R
+    2300034: ManArmLeft01
+    2300036: Torus01
+    2300038: Tube01
+    3300000: ManArmLeft
+    3300002: ManArmRight
+    3300004: ManBody
+    3300006: ManHead
+    3300008: ManLegRight
+    3300010: ManLegRight01
+    3300012: Mask
+    3300014: ManLegLeft
+    3300016: Arm L
+    3300018: Arm R
+    3300020: Body01
+    3300022: Cap01
+    3300024: ChamferBox01
+    3300026: Cylinder02
+    3300028: Head01
+    3300030: Leg L
+    3300032: Leg R
+    3300034: ManArmLeft01
+    3300036: Torus01
+    3300038: Tube01
+    4300000: ManBody
+    4300002: Mask
+    4300004: ManHead
+    4300006: ManArmLeft
+    4300008: ManArmRight
+    4300010: ManLegRight
+    4300012: ManLegRight01
+    4300014: ManLegLeft
+    4300016: Leg R
+    4300018: Leg L
+    4300020: Body01
+    4300022: Head01
+    4300024: Cap01
+    4300026: Arm R
+    4300028: Arm L
+    4300030: ChamferBox01
+    4300032: Tube01
+    4300034: Cylinder02
+    4300036: Torus01
+    4300038: ManArmLeft01
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .100000001
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 

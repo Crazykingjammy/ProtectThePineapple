@@ -1,0 +1,92 @@
+fileFormatVersion: 2
+guid: 0e23ce7b35806c54898aaa5bd771b6e9
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: TankBase
+    100002: TankBattery
+    100004: TankBody
+    100006: //RootNode
+    100008: TankWheelLeft
+    100010: TankWheelRight
+    100012: Camera01
+    100014: Camera01.Target
+    400000: TankBase
+    400002: TankBattery
+    400004: TankBody
+    400006: //RootNode
+    400008: TankWheelLeft
+    400010: TankWheelRight
+    400012: Camera01
+    400014: Camera01.Target
+    2300000: TankBase
+    2300002: TankBattery
+    2300004: TankBody
+    2300006: TankWheelLeft
+    2300008: TankWheelRight
+    3300000: TankBase
+    3300002: TankBattery
+    3300004: TankBody
+    3300006: TankWheelLeft
+    3300008: TankWheelRight
+    4300000: TankBase
+    4300002: TankWheelLeft
+    4300004: TankBody
+    4300006: TankWheelRight
+    4300008: TankBattery
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .25
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
